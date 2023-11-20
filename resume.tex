@@ -1,0 +1,222 @@
+%-------------------------
+% Resume in Latex
+% Author : Anh Nguyen
+% Based off of: Jake's Resume (https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs)
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+% custom packages
+\usepackage{ulem}
+\input{glyphtounicode}
+\usepackage{scrextend}
+\usepackage[top=0.5in, left=0.5in, right=0.5in, bottom=0.5in]{geometry}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+% \addtolength{\oddsidemargin}{-0.5in}
+% \addtolength{\evensidemargin}{-0.5in}
+% \addtolength{\textwidth}{1in}
+% \addtolength{\topmargin}{-0.7in}
+% \addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Anh Nguyen} \\ \vspace{1pt}
+    \small (585) 309-9351 $|$
+    \href{mailto:aln4739@rit.edu}{\uline{aln4739@rit.edu}} $|$ 
+    \href{https://anhnlh.com}{\uline{anhnlh.com}} $|$
+    \href{https://linkedin.com/in/anhnlh}{\uline{linkedin.com/in/anhnlh}} $|$
+    \href{https://github.com/anhnlh}{\uline{github.com/anhnlh}} \\
+    
+\end{center}
+
+%-----------SUMMARY-------------
+\section{Summary}
+\begin{addmargin}[0.15in]{0pt}
+    4-th year BS Computer Science at RIT with experience in full-stack development. Currently looking for Software Engineering internships starting January or May 2024.
+\end{addmargin}
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Rochester Institute of Technology}{Aug 2020 -- Dec 2024}
+      {\textbf{Honors Program}, BS Computer Science \& Economics}{Rochester, NY}
+      \resumeItemListStart
+        \resumeItem{\textbf{GPA:} 3.95/4.00}
+        \resumeItem{\textbf{Coursework:} Artificial Intelligence, Machine Learning, Algorithms, Database Management, Distributed Systems}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+        {Software Engineer Co-op}{May 2022 -- Dec 2022}
+        {Amplify Education Inc.}{Brooklyn, NY (Remote)}
+        \resumeItemListStart
+            \resumeItem{Built a student data merge tool for Tier 3 Support, reducing 15-30 minutes for each manual ticket resolution.}
+            \resumeItem{Investigated data sources for the ongoing GraphQL integration, speeding up the overall transition process.}
+            \resumeItem{Stood in as a Scrum Master for a sprint while the team's designated person was on leave.}
+            \resumeItem{\textbf{Learned} cloud-based computing in AWS, front-end development in React, API development in GraphQL, service monitoring using DataDog, development patterns such as CI/CD, and numerous other skills.}
+        \resumeItemListEnd
+
+        \resumeSubheading
+        {Student Lab Instructor}{Aug 2021 -- May 2022}
+        {Rochester Institute of Technology}{Rochester, NY}
+        \resumeItemListStart
+            \resumeItem{Assisted the professor with delivering lessons and answering questions during lab sessions.}
+            \resumeItem{Graded students' assignments and provided tutoring in the mentoring center.}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+        \small{\item{
+         \textbf{Languages:} Python, Java, C\#, SQL, JavaScript \\
+         \textbf{Database Systems:} PostgreSQL, DynamoDB, MongoDB \\ 
+         \textbf{Developer Tools:} GitHub, Amazon Web Services (AWS), Terraform, Docker, Cloudflare\\
+        }}
+    \end{itemize}
+
+%-----------PROJECTS-----------
+\section{Projects}
+\normalem % toggle normal \emph
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+        {\textbf{Self-Hosting} $|$ \emph{Linux, Cloudflare, Docker}}{Jan 2023 -- Current}
+        % {\textbf{Self-Hosting}}{Jan 2023 -- Current}
+        \resumeItemListStart
+            \resumeItem{Hosting IDEs on the web with a domain through a personal server to enable easy coding on a portable tablet.}
+            \resumeItem{Hosting the LoFiBeats project on my personal website using Cloudflare Tunnels.}
+            \resumeItem{\textbf{Utilized} Cloudflare to configure the domain and tunnel the personal server to the internet, Docker for consistent service deployment, and Certbot for automatic SSL certificate renewal.}
+        \resumeItemListEnd
+        
+        \resumeProjectHeading
+        {\href{https://projects.anhnlh.com/lofibeats}{\uline{\textbf{LoFiBeats}}} $|$ \emph{C\#, ASP.NET, PostgreSQL, HTML, CSS}}{Jan 2022 -- May 2022}
+        \resumeItemListStart
+            \resumeItem{Built a music website where users can create playlists, follow other users, and see popular songs among friends.}
+            \resumeItem{Scraped song, album, and artist data using the Spotify API to populate the database for the website.}
+            \resumeItem{\textbf{Utilized} ASP.NET in C\# for the full-stack development and PostgreSQL for the website database.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+% Custom sections
+\section{Leadership}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading{\textbf{GCCIS Delegate} $|$ \emph{RIT Honors Council}}{Aug 2022 -- Current}
+            \resumeItemListStart
+                \resumeItem{Leads conversations with professors for cooperative opportunities with the Honors Program.}
+                \resumeItem{Communicates with the college advocate to plan recreational and academic activities for students.}
+                \resumeItem{Engages in regular Honors Council meetings where officers plan events and discuss concerns within the program.}
+            \resumeItemListEnd
+
+        \resumeProjectHeading{\textbf{Orientation Leader} $|$ \emph{Rochester Institute of Technology}}{Aug 2021 -- Aug 2021}
+            \resumeItemListStart
+                \resumeItem{Led a group of 30 first-year students to attend various events during the university's New Student Orientation.}
+                \resumeItem{Facilitated connections and eased the college transition for incoming students through organized group activities.}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\section{Awards}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+        \small{\item{
+         \textbf{First Place, Meet \& Hack 2022:} Awarded $1^{st}$ place for the \href{https://github.com/anhnlh/MnT_Health_Website}{\uline{\textbf{HealthHacks}}} website project, out of 13 submissions. \\
+        }}
+    \end{itemize}
+
+
+%-------------------------------------------
+\ULforem % toggle ulem package emph
+\end{document}

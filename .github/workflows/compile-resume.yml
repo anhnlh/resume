@@ -1,0 +1,31 @@
+name: Update Resume
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  update_resume:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Access current repo
+        uses: actions/checkout@v4
+
+      - name: Compile LaTex Document
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: resume.tex
+
+      - name: Upload resume.pdf to repo
+        uses: actions/upload-artifact@v3
+        with:
+          name: PDF
+          path: resume.pdf
+      
+      - name: Use wrangler to update stored PDF
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: r2 object put easy-storage/anh-nguyen-resume.pdf --file resume.pdf --content-type application/pdf
+
