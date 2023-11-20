@@ -27,5 +27,5 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: r2 object put easy-storage/anh-nguyen-resume.pdf --file resume.pdf --content-type application/pdf
+          command: r2 object put easy-storage/anh-nguyen-resume.pdf --pipe --content-type application/pdf
 
