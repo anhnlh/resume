@@ -75,22 +75,22 @@
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+      \textbf{#1} & \small#2 \\
+      \textit{\small#3} & \small#4 \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
+      \textit{\small#1} & \small#2 \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
+      \small#1 & \small#2 \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -122,14 +122,14 @@
 %-----------SUMMARY-------------
 \section{Summary}
 \begin{addmargin}[0.15in]{0pt}
-    4-th year BS Computer Science at RIT with experience in full-stack development. Currently looking for Software Engineering internships starting January or May 2024.
+    Senior BS Computer Science at RIT with a focus on full-stack development, looking for a full-time Software Engineering position starting January 2025. Open to relocation.
 \end{addmargin}
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
       {Rochester Institute of Technology}{Aug 2020 -- Dec 2024}
-      {\textbf{Honors Program}, BS Computer Science \& Economics}{Rochester, NY}
+      {\textbf{Honors Program}, BS Computer Science \& Economics}{}
       \resumeItemListStart
         \resumeItem{\textbf{GPA:} 3.95/4.00}
         \resumeItem{\textbf{Coursework:} Artificial Intelligence, Machine Learning, Algorithms, Database Management, Distributed Systems}
@@ -140,18 +140,23 @@
 \section{Work Experience}
     \resumeSubHeadingListStart
         \resumeSubheading
+        {Amplify Education Inc.}{}
+        {Software Engineer Co-op}{Jan 2024 -- Current}
+        \resumeItemListStart
+            \resumeItem{Working on xAPI (experience data collection) instrumentation within the student assessment platform.}
+        \resumeItemListEnd
+        \resumeSubSubheading
         {Software Engineer Co-op}{May 2022 -- Dec 2022}
-        {Amplify Education Inc.}{Brooklyn, NY (Remote)}
         \resumeItemListStart
             \resumeItem{Built a student data merge tool for Tier 3 Support, reducing 15-30 minutes for each manual ticket resolution.}
             \resumeItem{Investigated data sources for the ongoing GraphQL integration, speeding up the overall transition process.}
             \resumeItem{Stood in as a Scrum Master for a sprint while the team's designated person was on leave.}
             \resumeItem{\textbf{Learned} cloud-based computing in AWS, front-end development in React, API development in GraphQL, service monitoring using DataDog, development patterns such as CI/CD, and numerous other skills.}
         \resumeItemListEnd
-
+        
         \resumeSubheading
+        {Rochester Institute of Technology}{}
         {Student Lab Instructor}{Aug 2021 -- May 2022}
-        {Rochester Institute of Technology}{Rochester, NY}
         \resumeItemListStart
             \resumeItem{Assisted the professor with delivering lessons and answering questions during lab sessions.}
             \resumeItem{Graded students' assignments and provided tutoring in the mentoring center.}
@@ -162,9 +167,9 @@
 \section{Skills}
     \begin{itemize}[leftmargin=0.15in, label={}]
         \small{\item{
-         \textbf{Languages:} Python, Java, C\#, SQL, JavaScript \\
-         \textbf{Database Systems:} PostgreSQL, DynamoDB, MongoDB \\ 
-         \textbf{Developer Tools:} GitHub, Amazon Web Services (AWS), Terraform, Docker, Cloudflare\\
+         \textbf{Languages:} Python, Java, C\#, SQL, JavaScript, TypeScript, Next.js \\
+        %  \textbf{Database Systems:} PostgreSQL, DynamoDB, MongoDB \\ 
+         \textbf{Developer Tools:} GitHub, Amazon Web Services (AWS), noSQL databases, Terraform, Docker, Cloudflare\\
         }}
     \end{itemize}
 
@@ -173,12 +178,10 @@
 \normalem % toggle normal \emph
     \resumeSubHeadingListStart
         \resumeProjectHeading
-        {\textbf{Self-Hosting} $|$ \emph{Linux, Cloudflare, Docker}}{Jan 2023 -- Current}
-        % {\textbf{Self-Hosting}}{Jan 2023 -- Current}
+        {\href{https://anhnlh.com}{\uline{\textbf{Self-hosted Portfolio}}} $|$ \emph{Linux, Cloudflare, Docker}}{Jan 2023 -- Current}
         \resumeItemListStart
-            \resumeItem{Hosting IDEs on the web with a domain through a personal server to enable easy coding on a portable tablet.}
-            \resumeItem{Hosting the LoFiBeats project on my personal website using Cloudflare Tunnels.}
-            \resumeItem{\textbf{Utilized} Cloudflare to configure the domain and tunnel the personal server to the internet, Docker for consistent service deployment, and Certbot for automatic SSL certificate renewal.}
+            \resumeItem{Hosting my portfolio website along with the LoFiBeats project at \href{https://anhnlh.com}{\uline{anhnlh.com}}.}
+            \resumeItem{\textbf{Utilized} Next.js for my website and Cloudflare to configure the domain and securely tunnel the personal server to the internet.}
         \resumeItemListEnd
         
         \resumeProjectHeading
