@@ -1,7 +1,7 @@
 %-------------------------
 % Resume in Latex
-% Author : Anh Nguyen
-% Based off of: Jake's Resume (https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs)
+% Author: Anh Nguyen
+% Based on: Jake's Resume (https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs)
 %------------------------
 
 \documentclass[letterpaper,11pt]{article}
@@ -61,7 +61,7 @@
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Ensure that generate pdf is machine readable/ATS parsable
+% Ensure that the generated pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
 %-------------------------
@@ -119,11 +119,6 @@
     
 \end{center}
 
-%-----------SUMMARY-------------
-\section{Summary}
-\begin{addmargin}[0.15in]{0pt}
-    Senior BS Computer Science at RIT with a focus on full-stack development, looking for a full-time Software Engineering position starting January 2025. Open to relocation.
-\end{addmargin}
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
@@ -132,7 +127,7 @@
       {\textbf{Honors Program}, BS Computer Science \& Economics}{Aug 2020 -- Dec 2024}
       \resumeItemListStart
         \resumeItem{\textbf{GPA:} 3.95/4.00}
-        \resumeItem{\textbf{Coursework:} Artificial Intelligence, Machine Learning, Algorithms, Database Management, Distributed Systems}
+        \resumeItem{\textbf{Relevant coursework:} Artificial Intelligence, Machine Learning, Database Management, Distributed Systems}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -140,20 +135,30 @@
 \section{Work Experience}
     \resumeSubHeadingListStart
         \resumeSubheading
-        {Amplify Education Inc.}{Brooklyn, NY (Remote)}
-        {Software Engineer Co-op}{Jan 2024 -- Current}
+        {Hochschule Düsseldorf}{Düsseldorf, Germany}
+        {Research Assistant | DAAD RISE Germany Scholar}{May 2024 -- Current}
         \resumeItemListStart
-            \resumeItem{Working on xAPI (experience data collection) instrumentation within the student assessment platform.}
+            \resumeItem{Researching tools for data quality assurance for safety-critical AI systems, specifically autonomous trains.}
         \resumeItemListEnd
+
+        \resumeSubheading
+        {Amplify Education Inc.}{Brooklyn, NY (Remote)}
+        {Software Engineer Co-op}{Jan 2024 -- May 2024}
+        \resumeItemListStart
+            \resumeItem{Implemented user experience (xAPI) collection in mCLASS for more than 200,000 K-3 students in Louisiana.}
+            \resumeItem{Resolved a year-long front-end error that had caused a 10$\%$ increase in user frustration, enhancing application reliability and robustness.}
+            \resumeItem{Optimized legacy PagerDuty monitors and alarms, boosting productivity by minimizing alert fatigue.}
+            \resumeItemListEnd
+
         \resumeSubSubheading
         {Software Engineer Co-op}{May 2022 -- Dec 2022}
         \resumeItemListStart
-            \resumeItem{Built a student data merge tool for Tier 3 Support, reducing 15-30 minutes for each manual ticket resolution.}
+            \resumeItem{Built a student data merge tool for Tier 3 Support, saving up to 30 minutes for each manual ticket resolution.}
             \resumeItem{Investigated data sources for the ongoing GraphQL integration, speeding up the overall transition process.}
             \resumeItem{Stood in as a Scrum Master for a sprint while the team's designated person was on leave.}
-            \resumeItem{\textbf{Learned} cloud-based computing in AWS, front-end development in React, API development in GraphQL, service monitoring using DataDog, development patterns such as CI/CD, and numerous other skills.}
+            % \resumeItem{\textbf{Learned} cloud-based computing in AWS, front-end development in React, API development in GraphQL, service monitoring using DataDog, development patterns such as CI/CD, and numerous other skills.}
         \resumeItemListEnd
-        
+
         \resumeSubheading
         {Rochester Institute of Technology}{Rochester, NY}
         {Student Lab Instructor}{Aug 2021 -- May 2022}
